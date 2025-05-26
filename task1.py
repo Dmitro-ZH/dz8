@@ -1,8 +1,7 @@
-cat = True
 k = input()
 amount = int(k[0:k.find(" ")])
 weights = k[(k.find(" ")+1):]
-while cat:
+while True:
     if amount > 100 or amount < 1:
         break
     else:
@@ -23,5 +22,5 @@ while cat:
             else:
                 weight += i
 
-        print(f"{fish_weight[0]} {fish_weight[-1]} {weight}")
+        print(f"{fish_weight[-1]} {fish_weight[0]} {weight}")
     break
